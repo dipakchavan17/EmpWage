@@ -11,6 +11,7 @@ namespace Empwage123
         static void Main(string[] args)
         {
             Console.WriteLine("welcome");
+            EmpWage.EmpAttendance();
             Console.ReadLine();
         }
     }
