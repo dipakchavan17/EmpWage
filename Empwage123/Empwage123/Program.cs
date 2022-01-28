@@ -11,8 +11,8 @@ namespace Empwage123
         static void Main(string[] args)
         {
             Console.WriteLine("welcome");
-            EmpWage e=new EmpWage();
-            e.MonthlyEmpWage();
+            
+            EmpWage. computeEmpWage();
             Console.ReadLine();
         }
     }
