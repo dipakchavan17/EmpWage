@@ -11,8 +11,13 @@ namespace Empwage123
         static void Main(string[] args)
         {
             Console.WriteLine("welcome");
-            EmpWage.computeEmpWage("Reliance", 20, 4, 20);
-            EmpWage.computeEmpWage("dmart", 20, 2, 10);
+           
+            EmpWage dMart = new EmpWage("DMart", 20, 2, 10);
+            EmpWage reliance = new EmpWage("Reliance", 10, 4, 10);
+            dMart.computeEmpWage();
+            Console.WriteLine(dMart.toString());
+            reliance.computeEmpWage();
+            Console.WriteLine(reliance.toString());
 
             Console.ReadLine();
         }
