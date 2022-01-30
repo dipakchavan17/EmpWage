@@ -8,17 +8,14 @@ namespace Empwage123
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
-            Console.WriteLine("welcome");
-           
-            EmpWage dMart = new EmpWage("DMart", 20, 2, 10);
-            EmpWage reliance = new EmpWage("Reliance", 10, 4, 10);
-            dMart.computeEmpWage();
-            Console.WriteLine(dMart.toString());
-            reliance.computeEmpWage();
-            Console.WriteLine(reliance.toString());
-
+            Console.WriteLine("Welcome to the Employee Wage Computation Problem");
+            EmpWageBuilderArray empWageBuilder = new EmpWageBuilderArray();
+            empWageBuilder.addCompanyEmpWage("DMart", 20, 20, 100);
+            empWageBuilder.addCompanyEmpWage("PVP", 30, 24, 160);
+            empWageBuilder.computeEmpWage();
             Console.ReadLine();
         }
     }
