@@ -11,6 +11,7 @@ namespace Empwage123
 
         static void Main(string[] args)
         {
+            //printing message on console
             Console.WriteLine("Welcome To Employee Wage Computation Program \n");
 
             //Creating Object for each company and passing value to constructor.
@@ -19,7 +20,6 @@ namespace Empwage123
             company.AddCompany("Reliance", 25, 125, 24);
             company.AddCompany("Amazon", 40, 110, 22);
             company.GetWage();
-            Console.WriteLine("Total Wage for Company is: " + company.GetTotalWage("Dmart"));
             Console.ReadLine();
         }
     }
