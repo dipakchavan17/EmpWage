@@ -6,25 +6,32 @@ using System.Threading.Tasks;
 
 namespace Empwage123
 {
-
     public class EmpWage
     {
-        public int empRatePerHour, numOfWorkingDays, maxHoursPerMonth, totalEmpWage;
+        //Instance variables.
         public string company;
-        public EmpWage(string company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMonth)
+        public int wagePrHrs, totalWorkHrs, totalWorkDay, totalWage;
+
+        //Constructor to set value for each object.
+        public EmpWage(string company, int wagePrHrs, int totalWorkHrs, int totalWorkDay)
         {
             this.company = company;
-            this.empRatePerHour = empRatePerHour;
-            this.numOfWorkingDays = numOfWorkingDays;
-            this.maxHoursPerMonth = maxHoursPerMonth;
+            this.wagePrHrs = wagePrHrs;
+            this.totalWorkHrs = totalWorkHrs;
+            this.totalWorkDay = totalWorkDay;
         }
-        public void setTotalEmpWage(int totalEmpWage)
+
+        //Method to set Total Wage of a Company.
+        public void SetTotalWage(int totalWage)
         {
-            this.totalEmpWage = totalEmpWage;
+            this.totalWage = totalWage;
         }
+
+        //Method to show Total Wage of a company.
         public string toString()
         {
-            return "The Total Employee Wage for Company " + this.company + " is " + this.totalEmpWage;
+            return "Total Wage of a Company: " + this.company + " is " + this.totalWage;
         }
     }
 }
+

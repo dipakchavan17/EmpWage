@@ -11,11 +11,15 @@ namespace Empwage123
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the Employee Wage Computation Problem");
-            EmpWageBuilderArray empWageBuilder = new EmpWageBuilderArray();
-            empWageBuilder.addCompanyEmpWage("DMart", 20, 20, 100);
-            empWageBuilder.addCompanyEmpWage("PVP", 30, 24, 160);
-            empWageBuilder.computeEmpWage();
+            Console.WriteLine("Welcome To Employee Wage Computation Program \n");
+
+            //Creating Object for each company and passing value to constructor.
+            CalculateEmpWage company = new CalculateEmpWage();
+            company.AddCompany("Dmart", 30, 120, 25);
+            company.AddCompany("Reliance", 25, 125, 24);
+            company.AddCompany("Amazon", 40, 110, 22);
+            company.GetWage();
+            Console.WriteLine("Total Wage for Company is: " + company.GetTotalWage("Dmart"));
             Console.ReadLine();
         }
     }
